@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	box-sizing:border-box;
+}
+nav{
+	margin-left:-40px;
+	position:fixed;
+}
+nav ul li{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+nav a:hover{
+	border:#D81418;
+}
+body{
+	background:url(newbg.jpg);
+	background-size:cover;
+}
+#container{
+	align:center;
+	top:-150px;
+	/*margin-top: 2.4rem;*/
+	/*display: block;*/
+	margin-left: 50px;
+	margin-right: 50px;
+	max-width:2000px;
+	position:relative;
+	transform:skewY(15deg);
+}
+#top{
+	background:#1a1e21;
+	height: 700px;
+	padding-top:400px;
+	
+}
+.unskew{
+	transform:skewY(-15deg);
+}
+h1{
+	padding-top:0px;
+	padding-right:20px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:70px;
+	text-align:right;
+	color:#b7d1df;
+	
+	
+}
+h2{
+	padding-top:50px;
+	padding-bottom:0px;
+	padding-right:20px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:20px;
+	text-align:right;
+	color:#b7d1df;
+	
+}
+#portfolio{
+	background:#0f2f44;
+	height: 569px;
+	margin-top:40px;
+}
+#bottom{
+	background:#457489;
+	height: 569px;
+	margin-top:40px;
+}
+
+
+@media (max-width:639px){
+	h1{
+		font-size:40px;
+	}
+}
+
+
+
