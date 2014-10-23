@@ -35,24 +35,28 @@ body{
 	padding-top:400px;
 	
 }
+p{
+	color:white;
+	margin:-230px 40px 40px 40px;
+	font-size:16px;
+	font-family: 'Poiret One', cursive;
+	
+}
 .unskew{
 	transform:skewY(-15deg);
 }
 h1{
-	padding-top:0px;
-	padding-right:20px;
-	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size:70px;
+	padding:0px 20px 0px 0px;
+	font-family: 'Poiret One', cursive;
+	font-size:82px;
 	text-align:right;
 	color:#b7d1df;
 	
 	
 }
 h2{
-	padding-top:50px;
-	padding-bottom:0px;
-	padding-right:20px;
-	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	padding:50px 20px 0px 0px;
+	font-family: 'Poiret One', cursive;
 	font-size:20px;
 	text-align:right;
 	color:#b7d1df;
@@ -63,16 +67,50 @@ h2{
 	height: 569px;
 	margin-top:40px;
 }
+#portfolio h2{
+	color:white;
+	text-align:left;
+	padding:10px 0px 0px 10px;
+	font-size:28px;
+}
 #bottom{
 	background:#457489;
 	height: 569px;
 	margin-top:40px;
 }
+footer{
 
-
+}
+/*#end{
+	background:#B9B4B4;
+	height: 500px;
+	margin:-200px 0px 0px 0px;
+}*/
+@media (max-width:860px){
+	h1{
+		font-size:50px;
+	}
+	p{
+		font-size:10px;
+	}
+}
 @media (max-width:639px){
 	h1{
 		font-size:40px;
+	}
+	p{
+		font-size:10px;
+	}
+}
+@media (max-width:330px){
+	h1{
+		font-size:18px;
+	}
+	h2{
+		font-size:12px;
+	}
+	p{
+		font-size:7px;
 	}
 }
 
