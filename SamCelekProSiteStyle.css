@@ -17,23 +17,26 @@ nav a:hover{
 body{
 	background:url(newbg.jpg);
 	background-size:cover;
+	margin:0;
 }
 #container{
-	align:center;
-	top:-150px;
+	/*top:-150px;
 	/*margin-top: 2.4rem;*/
 	/*display: block;*/
-	margin-left: 50px;
-	margin-right: 50px;
-	max-width:2000px;
 	position:relative;
-	transform:skewY(15deg);
+	/*transform:skewY(15deg);*/
+	width: 70%;
+  	margin: 0 auto;
+  	overflow: hidden;
+}
+#top, #bottom { 
+  position: relative;
+  padding: 20px;
 }
 #top{
 	background:#1a1e21;
-	height: 700px;
-	padding-top:400px;
-	
+	height: 1000px;
+	/*padding-top:400px;*/	
 }
 p{
 	color:white;
@@ -42,17 +45,32 @@ p{
 	font-family: 'Poiret One', cursive;
 	
 }
+#top:after{
+  background:#1a1e21;
+  bottom: -150px; 
+  transform: skewY(15deg);
+}
+#top:after, #bottom:after { 
+  content: ''; 
+  position: absolute; 
+  z-index: -1;
+  width: 100%;
+  left: 0;
+  height: 1000px; 
+  transform: skewY(15deg);
+}
 .unskew{
 	transform:skewY(-15deg);
 }
+/*.reskew{
+	transform:skewY(15deg);
+}*/
 h1{
 	padding:0px 20px 0px 0px;
 	font-family: 'Poiret One', cursive;
 	font-size:82px;
 	text-align:right;
-	color:#b7d1df;
-	
-	
+	color:#b7d1df;	
 }
 h2{
 	padding:50px 20px 0px 0px;
@@ -64,8 +82,10 @@ h2{
 }
 #portfolio{
 	background:#0f2f44;
-	height: 569px;
-	margin-top:40px;
+	height: 550px;
+	padding: 20px;
+    transform: skewY(15deg);
+    margin: 120px 0;
 }
 #portfolio h2{
 	color:white;
@@ -75,11 +95,13 @@ h2{
 }
 #bottom{
 	background:#457489;
-	height: 569px;
 	margin-top:40px;
+	height: 550px;
 }
-footer{
-
+#bottom:after{
+  background: #457489;
+  top: -100px; 
+  height: 1000px;
 }
 /*#end{
 	background:#B9B4B4;
