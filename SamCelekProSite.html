@@ -10,16 +10,16 @@
 <body>
 	<nav> 
     <ul>
-    	<li><a href="#"><img src="about.png" alt="about"></a></li>
-        <li><a href="#"><img src="home.png" alt="home"></a></li>
-        <li><a href="#"><img src="portfolio.png" alt="portfolio"></a></li>
-        <li><a href="#"><img src="email.png" alt="email"></a></li>
-        <li><a href="#"><img src="resume.png" alt="resume"></a></li>
+    	<li><a href="#top"><img src="about.png" alt="about"></a></li>
+        <li><a href="#header1"><img src="home.png" alt="home"></a></li>
+        <li><a href="#portfolio"><img src="portfolio.png" alt="portfolio"></a></li>
+        <li><a href="mailto:s.celek@col.com"><img src="email.png" alt="email"></a></li>
+        <li><a href="#bottom"><img src="resume.png" alt="resume"></a></li>
     </ul>
 	</nav>
 	<div id="container">
        	<div id="top">
-         <header class="unskew">
+         <header>
          	<p>Hello! My name is Samantha Celek. I am a Senior Communications major and Art minor at Coker College. I am from Charleston, SC. I will attain a Bachelor's of Art in Communications in May 2015.<br><br>
             I recently studied abroad in Florence, Italy and found my passion for art and travel while studying there for three months. I took Web Design I, Visual Communication Design, and History of Photography in Italy. I am currently enrolled in Web Design II and Graphic Design I at Coker.<br><br>
             I also play volleyball for my college and enjoy working out, hanging out with friends and family, and watching movies. I enjoy pushing myself out of my comfort zone and trying new things.<br><br>
@@ -32,15 +32,30 @@
         </div>
         <div id="portfolio">
         <h2>Portfolio</h2>
-        <div class="reskew">
-        <div id="picturebox" class="unskew">
-        <img src="morell.png" alt="morell">
-        </div>
-        </div>
+            <div class="picturebox">
+            <img src="morell.png" alt="morell">
+            </div>
+            <div id="dance" class="picturebox">
+            <img src="danceposter.png" alt="danceposter">
+            </div>
+            <div id="dots" class="picturebox">
+            <img src="dots.png" alt="dots">
+            </div>
+            <aside>
+             <div id="wine" class="picturebox">
+            <img src="winelabels.png" alt="winelabels">
+            </div>
+            <div id="blank1" class="picturebox">
+            <img src="blank.png" alt="blank">
+            </div>
+            <div id="blank2" class="picturebox">
+            <img src="blank.png" alt="blank">
+            </div>
+            
+            </aside>
         </div>
         <div id="bottom"></div>
-        
-     </div>
+     	</div>
      <script>
 	 $( document ).ready(function() {
 	 	window.scroll(0, $("#header1").offset().top);
