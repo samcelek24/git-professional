@@ -132,12 +132,15 @@ aside{
 #bottom{
 	background:#457489;
 	margin-top:40px;
-	height: 400px;
+	height: 200px;
 }
 #bottom:after{
   background: #457489;
   top: -100px; 
   height: 1000px;
+}
+#bottom p{
+	background:#3A3A3A;
 }
 
 @media (max-width:940px){
