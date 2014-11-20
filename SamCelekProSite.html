@@ -8,15 +8,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
 </head>
 <body>
-	<nav> 
+	<div id="nav" class="list"> 
     <ul>
-    	<li><a href="#top"><img src="about.png" alt="about"></a></li>
-        <li><a href="#header1"><img src="home.png" alt="home"></a></li>
-        <li><a href="#portfolio"><img src="portfolio.png" alt="portfolio"></a></li>
-        <li><a href="mailto:s.celek@col.com"><img src="email.png" alt="email"></a></li>
-        <li><a href="#bottom"><img src="resume.png" alt="resume"></a></li>
+    	<li class="photo"><a href="#top"><img src="about.png" alt="about"><span>about</span></a></li>
+        <li class="photo"><a href="#header1"><img src="home.png" alt="home"><span>home</span></a></li>
+        <li class="photo"><a href="#portfolio"><img src="portfolio.png" alt="portfolio"><span>portfolio</span></a></li>
+        <li class="photo"><a href="mailto:s.celek@col.com"><img src="email.png" alt="email"><span>mail</span></a></li>
+        <li class="photo"><a href="#bottom"><img src="resume.png" alt="resume"><span>resume</span></a></li>
     </ul>
-	</nav>
+	</div>
 	<div id="container">
        	<div id="top">
          <header>
@@ -34,10 +34,10 @@
         <h2>Portfolio</h2>
         <div class="column">
             <div id="morell" class="picturebox">
-            	<img src="morell.png" alt="morell">
+            	<img src="morell.png" data-big-image=  alt="morell">
             </div>
             <div id="dance" class="picturebox">
-            	<img src="danceposter.png" alt="danceposter">
+            	<img src="danceposter.png" data-big-image="dance_big.png" alt="danceposter">
             </div>
             <div id="dots" class="picturebox">
             	<img src="dots.png" alt="dots">
@@ -55,28 +55,113 @@
             </div>
         </div>
         </div>
+ 
      <div id="bottom">
+     	<div id="logo">
         	<img src="logo.png" alt="logo">
-        	<p>Designed by: Samantha Celek <br>
-        	pdf resume
+        	<p>Designed by: Samantha Celek
+             <br><br>
+        	<a href="samantha_celek.pdf">pdf resume</a>
         	</p>
+            </div>
      </div>
      </div>
      
-     
-     <div id="darken">
-    	 <div id="modal"><button id="close">&times </button>
+     <div id="darken" class="modal1">
+    	<div id="modal">
+         <button id="close" class="close1">&times </button>
+         <div id="modal_content1">
+         	<div id='morell_img'>
+         <h2>Morrell Rehab Center Wall Mural<br>
+         	September 2014</h2>
+         <img src="morell_big.png">
+         </div>
+         <h4> The composition was made for my Graphic Design I course and was purposed for the Morrell Rehab Center. The mural was to cover a blank wall in the rehab center and had to display the words "strength comes from within." <br><br>
+         <div class="hfive"><h5>Designed with: Adobe Photoshop CC 2014</h5></div>
+         </h4>
+         </div>
      	  </div>
-      </div>
+          </div>
+     
+     <div id="darken" class="modal2">
+    	<div id="modal">
+         <button id="close" class="close2">&times </button>
+         <div id="modal_content2">
+         	<div id='dance_img'>
+         <h2>Dance Showcase Poster<br>
+         	October 2014</h2>
+         <img src="dance_big.png">
+         </div>
+         <h4> The composition was made for my Graphic Design I course and was purposed for the Coker College Fall Student showcase. The poster was exhibited in the 42nd Annual Coker College Student Art Exhibtion. <br><br>
+         <div class="hfive"><h5>Designed with: Adobe Photoshop CC 2014</h5></div>
+         </h4>
+         </div>
+     	  </div>
+          </div>
+          
+          
+      <div id="darken" class="modal3">
+      	<div id="modal">
+         <button id="close" class="close3">&times </button>
+         <div id="modal_content3">
+         	<div id='dots_img'>
+         <h2>Dots Exercise<br>
+         	October 2014</h2>
+         <img src="dots_big.png">
+         </div>
+         <h4> The exercise was also made for my Graphic Design I course. The composition had to display direction and progression using any amount of black dots as desired.<br><br>
+         <div class="hfive"><h5>Designed with: Adobe Illustrator CC 2014</h5></div>
+         </h4>
+         </div>
+         </div>
+     	  </div>
+          
+      <div id="darken" class="modal4">
+      	<div id="modal">
+         <button id="close" class="close4">&times </button>
+         <div id="modal_content4">
+         	<div id='winelabels_img'>
+         <h2>Tesini Wine Labels<br>
+         	February 2014</h2>
+         <img src="winelabels_big.png">
+         </div>
+         <h4> I made these wine labels for my course in Florence, Italy while studying abroad. The class was to create two different wine labels, one for a brut and one for a rose. The labels were for the new Vinicollina Tesini wine company. The owner of the company, Dr. Tesini, was to pick the label suitable for his two products. Dr. Tesini ended up picking my Lila label for his rose. I am very honored to represent the company and Italian vineyard with my work.<br><br> <div class="hfive"><h5>Designed with: Adobe Illustrator CC 2014</h5></div>
+         </h4>
+         </div>
+         </div>
+     	  </div>
+          
      <script>
 	 $( document ).ready(function() {
 	 	window.scroll(0, $("#header1").offset().top);
+		$("#morell").click(function(){
+			$(".modal1").fadeIn(150);
+		});
 		$("#dance").click(function(){
-			$("#darken").fadeIn(150);
+			$(".modal2").fadeIn(150);
+		});
+		$("#dots").click(function(){
+			$(".modal3").fadeIn(150);
+		});
+		$("#wine").click(function(){
+			$(".modal4").fadeIn(150);
 		});
 		$("#close").click(function(){
 			$("#darken").fadeOut();
 		});
+		$(".close2").click(function(){
+			$(".modal2").fadeOut();
+		});
+		$(".close3").click(function(){
+			$(".modal3").fadeOut();
+		});
+		$(".close4").click(function(){
+			$(".modal4").fadeOut();
+		});
+		$('img').click(function(){
+			($(this).attr('data-big-image'));
+		});
+	
 	 });
 	 </script>
      
